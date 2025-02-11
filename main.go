@@ -76,7 +76,18 @@ func main() {
 	if command == "merge sort" {
 		fmt.Printf("Array original: %v\n", arr)
 
-		ordenacao.QuickSort(arr, 0, len(arr)-1)
+		ordenacao.MergeSort(arr, 0, len(arr)-1)
+
+		fmt.Printf("Array ordenado: %v\n", arr)
+		fmt.Println("Complexidade no melhor caso O(n log n)")
+		fmt.Println("Complexidade no caso medio O(n log n)")
+		fmt.Println("Complexidade no pior caso O(n log n)")
+	}
+
+	if command == "heap sort" {
+		fmt.Printf("Array original: %v\n", arr)
+
+		ordenacao.HeapSort(arr)
 
 		fmt.Printf("Array ordenado: %v\n", arr)
 		fmt.Println("Complexidade no melhor caso O(n log n)")
